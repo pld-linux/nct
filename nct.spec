@@ -7,9 +7,9 @@ Version:	1.4
 Release:	1
 License:	GPL
 Group:		Applications/Games
-BuildRequires:	ncurses-devel
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	ncurses-devel
 Source0:	ftp://ftp.yars.free.net/pub/software/unix/games/tetris/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
