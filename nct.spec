@@ -8,6 +8,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Games
 Source0:	ftp://ftp.yars.free.net/pub/software/unix/games/tetris/%{name}-%{version}.tar.gz
+# Source0-md5:	952a078ec2ecb05e0f19b50e0411837a
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel
