@@ -6,6 +6,9 @@ Summary(pl):	Tetriso-podobna gra rozszerzona o kolorki
 Summary(pt_BR):	Jogo tipo Tetris, incrementado por cores, multinível
 Summary(es):	Juego tipo Tetris, mejorado con ayuda de colores.
 Group:		Applications/Games
+BuildRequires:	ncurses-devel
+BuildRequires:	automake
+BuildRequires:	autoconf
 License:	GPL
 Source0:	ftp://ftp.yars.free.net/pub/software/unix/games/tetris/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,9 +40,11 @@ si se escoge sólo uno, se tendrá el ju ego tetris clásico.
 %setup -q
 
 %build
+rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
+CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %configure
 %{__make}
 
@@ -51,6 +56,11 @@ touch	$RPM_BUILD_ROOT/%{_localstatedir}/games/%{name}.score
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+touch %{_localstatedir}/games/%{name}.score
+%{__chown} root.games %{_localstatedir}/games/%{name}.score
+%{__chmod} 0664 %{_localstatedir}/games/%{name}.score
 
 %files
 %defattr(644,root,root,755)
