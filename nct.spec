@@ -52,9 +52,10 @@ CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_localstatedir}/games
+install -d $RPM_BUILD_ROOT%{_localstatedir}/games
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 touch	$RPM_BUILD_ROOT%{_localstatedir}/games/%{name}.score
 
@@ -63,8 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 touch %{_localstatedir}/games/%{name}.score
-%{__chown} root.games %{_localstatedir}/games/%{name}.score
-%{__chmod} 0664 %{_localstatedir}/games/%{name}.score
+chown root:games %{_localstatedir}/games/%{name}.score
+chmod 0664 %{_localstatedir}/games/%{name}.score
 
 %files
 %defattr(644,root,root,755)
