@@ -4,13 +4,14 @@ Summary(pl):	Tetriso-podobna gra rozszerzona o kolorki
 Summary(pt_BR):	Jogo tipo Tetris, incrementado por cores, multinível
 Name:		nct
 Version:	1.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Games
+Source0:	ftp://ftp.yars.free.net/pub/software/unix/games/tetris/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel
-Source0:	ftp://ftp.yars.free.net/pub/software/unix/games/tetris/%{name}-%{version}.tar.gz
+Requires(post):	fileutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
