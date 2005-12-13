@@ -46,7 +46,7 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
+CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %configure
 %{__make}
 
@@ -71,4 +71,4 @@ chmod 0664 %{_localstatedir}/games/%{name}.score
 %defattr(644,root,root,755)
 %doc README NEWS
 %attr(2755,root,games) %{_bindir}/%{name}
-%attr(0664,root,games) %ghost %{_localstatedir}/games/%{name}.score
+%attr(664,root,games) %ghost %{_localstatedir}/games/%{name}.score
