@@ -1,7 +1,7 @@
 Summary:	Tetris-like game extended by colors
-Summary(es):	Juego tipo Tetris, mejorado con ayuda de colores
-Summary(pl):	Tetriso-podobna gra rozszerzona o kolorki
-Summary(pt_BR):	Jogo tipo Tetris, incrementado por cores, multinível
+Summary(es.UTF-8):   Juego tipo Tetris, mejorado con ayuda de colores
+Summary(pl.UTF-8):   Tetriso-podobna gra rozszerzona o kolorki
+Summary(pt_BR.UTF-8):   Jogo tipo Tetris, incrementado por cores, multinÃ­vel
 Name:		nct
 Version:	1.4
 Release:	3
@@ -20,23 +20,23 @@ Tetris-like game, extended by colors. Light colors can be replaced by
 heavy ones, playing various levels at the same time. Number of colors
 can be chosen, in case of one color we get classic game.
 
-%description -l es
+%description -l es.UTF-8
 Juego tipo Tetris, mejorado con ayuda de colores. Colores suaves
-pueden reemplaz arse por colores más fuertes, así se juega de manera
-simultánea con varios nivel es. Puede escogerse el número de colores,
-si se escoge sólo uno, se tendrá el ju ego tetris clásico.
+pueden reemplaz arse por colores mÃ¡s fuertes, asÃ­ se juega de manera
+simultÃ¡nea con varios nivel es. Puede escogerse el nÃºmero de colores,
+si se escoge sÃ³lo uno, se tendrÃ¡ el ju ego tetris clÃ¡sico.
 
-%description -l pl
-Tetriso-podobna gra, rozszerzona o kolorki. Jasne kolorki mog± byæ
-zastêpowane przez ciemne, mo¿na graæ na ró¿nych poziomach w tym samym
-czasie. Liczba kolorków mo¿e byæ swobodnie dobierana, w przypadku
+%description -l pl.UTF-8
+Tetriso-podobna gra, rozszerzona o kolorki. Jasne kolorki mogÄ… byÄ‡
+zastÄ™powane przez ciemne, moÅ¼na graÄ‡ na rÃ³Å¼nych poziomach w tym samym
+czasie. Liczba kolorkÃ³w moÅ¼e byÄ‡ swobodnie dobierana, w przypadku
 jednego koloru mamy do czynienia z klasycznym tetrisem.
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 Jogo tipo tetris, incrementado por cores. Cores leves podem ser
-sobrepostas por cores mais pesadas, jogando-se com vários níveis
-simultaneamente. O número de cores pode ser escolhido, e caso se
-escolha apenas uma, se tem o Tetris clássico.
+sobrepostas por cores mais pesadas, jogando-se com vÃ¡rios nÃ­veis
+simultaneamente. O nÃºmero de cores pode ser escolhido, e caso se
+escolha apenas uma, se tem o Tetris clÃ¡ssico.
 
 %prep
 %setup -q
