@@ -1,7 +1,7 @@
 Summary:	Tetris-like game extended by colors
-Summary(es.UTF-8):   Juego tipo Tetris, mejorado con ayuda de colores
-Summary(pl.UTF-8):   Tetriso-podobna gra rozszerzona o kolorki
-Summary(pt_BR.UTF-8):   Jogo tipo Tetris, incrementado por cores, multinível
+Summary(es.UTF-8):	Juego tipo Tetris, mejorado con ayuda de colores
+Summary(pl.UTF-8):	Tetriso-podobna gra rozszerzona o kolorki
+Summary(pt_BR.UTF-8):	Jogo tipo Tetris, incrementado por cores, multinível
 Name:		nct
 Version:	1.4
 Release:	3
